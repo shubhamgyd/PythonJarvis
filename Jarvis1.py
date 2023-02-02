@@ -20,7 +20,7 @@ def text_to_speech(x):
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     engine.setProperty('voice',voices[0].id) # This code helps to set the voice, 
-    #you can change the voice by index ofvoice[]
+    #you can change the voice by index of voice[]
     rate = engine.getProperty('rate')
     engine.setProperty('rate', 150) # This helps set the speed
     engine.say(x)
